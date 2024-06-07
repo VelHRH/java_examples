@@ -1,4 +1,4 @@
-package com.example.SpringDataJPA.service;
+package com.example.SpringSecurity.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.SpringDataJPA.model.Job;
-import com.example.SpringDataJPA.repository.JobRepository;
+import com.example.SpringSecurity.model.Job;
+import com.example.SpringSecurity.repository.JobRepository;
 
 @Service
 public class JobService {
