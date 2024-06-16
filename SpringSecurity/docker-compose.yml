@@ -16,4 +16,9 @@ services:
       POSTGRES_DB: experiment
       POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_INITDB_ARGS: --auth-host=trust
+    volumes:
+      - docker-data:/var/lib/postgresql/data
+  
+volumes:
+  docker-data:
       
