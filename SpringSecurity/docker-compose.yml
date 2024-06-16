@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    ports:
+      - 8080:8090
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_PASSWORD: 0000
+      POSTGRES_USER: valik
+      POSTGRES_DB: experiment
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_INITDB_ARGS: --auth-host=trust
+      
