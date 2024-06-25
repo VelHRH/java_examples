@@ -19,7 +19,7 @@ public class SelectionSort {
         return nums;
     }
 
-    public static void printArray(int[] nums) {
+    static void printArray(int[] nums) {
         for (int num : nums) {
             System.out.print(num + " ");
         }
